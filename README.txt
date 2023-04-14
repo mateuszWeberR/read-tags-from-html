@@ -3,16 +3,15 @@ Read from the console the name of a file
  containing HTML.
 
 Example:
-Info about Leela <span xml:lang="en"
-lang="en"><b><span>Leela Turanga
+Info about Leela <span xml:lang="en"lang="en"><b><span>Leela Turanga
 </span></b></span><span>Super</span>
 <span>girl</span>
 
 The main method's first parameter is a
 tag name. For example, "span".
-Display all tags that match the specified
+Displaying all tags that match the specified
  tag.
-The order should match their order in the
+The order match their order in the
  file, each tag on a new line.
 The number of spaces, newline characters
 (\n), or carriage returns (\r) does not
@@ -36,17 +35,3 @@ Tag templates:
 text2>text1</tag>
 
 text1 and text2 can be empty
-
-
-Requirements:
-1. The program must read the file name from
- the console (use BufferedReader).
-2. The BufferedReader used for reading input
- from the console must be closed after use.
-3. The program must read the file's contents
- (use FileReader).
-4. The file input stream (FileReader) must
-be closed.
-5. The program must write to the console
-all the tags that match the tag specified by
- the argument passed to the main method.
