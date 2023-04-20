@@ -2,11 +2,6 @@
 Read from the console the name of a file
  containing HTML.
 
-Example:
-Info about Leela <span xml:lang="en"lang="en"><b><span>Leela Turanga
-</span></b></span><span>Super</span>
-<span>girl</span>
-
 The main method's first parameter is a
 tag name. For example, "span".
 Displaying all tags that match the specified
@@ -20,6 +15,11 @@ The file does not have a CDATA tag. Each
 opening tag has a separate closing tag,
 and there are no self-closing tags.
 Tags may have nested tags.
+
+Example:
+Info about Leela <span xml:lang="en"lang="en"><b><span>Leela Turanga
+</span></b></span><span>Super</span>
+<span>girl</span>
 
 Example output:
 <span xml:lang="en" lang="en"><b><span>Leela
