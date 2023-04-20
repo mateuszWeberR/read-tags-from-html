@@ -23,10 +23,6 @@ import java.util.List;
 
 public class Solution {
 
-    public static boolean debugMode() {
-        return false;
-    }
-
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String fileName = reader.readLine();
@@ -42,11 +38,6 @@ public class Solution {
                 String newLine = reader1.readLine();
                 line += newLine;
             }
-        }
-        if (debugMode()) {
-            System.out.println("Line: " + new Throwable().getStackTrace()[0].getLineNumber());
-            System.out.println(line);
-            System.out.println();
         }
 
         String omega = "Ω";
@@ -78,23 +69,11 @@ public class Solution {
             newIndextLast = indexLast + 1;
         }
 
-        if (debugMode()) {
-            System.out.println("Line: " + new Throwable().getStackTrace()[0].getLineNumber());
-            System.out.println(indexesOfOpen);
-            System.out.println(indexesOfClose);
-            System.out.println();
-        }
         // Create list for every index values
         List<Integer> totalList = new ArrayList<>();
         totalList.addAll(indexesOfOpen);
         totalList.addAll(indexesOfClose);
         Collections.sort(totalList);
-
-        if (debugMode()) {
-            System.out.println("Line: " + new Throwable().getStackTrace()[0].getLineNumber());
-            System.out.println(totalList);
-            System.out.println();
-        }
 
         int counter = 0;
         boolean open = true;
